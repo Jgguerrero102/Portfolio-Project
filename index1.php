@@ -1,5 +1,7 @@
 <?php
 
+$connect = mysqli_connect("local host","root","","shopping_cart");
+
 session_start();
 
 
