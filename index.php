@@ -24,7 +24,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Dino-Bot Toys</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,16 +39,17 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Products
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="products-dinosaurs.php">Dinosaurs</a>
-            <a class="dropdown-item" href="products-robots.php">Robots</a>
-            <div class="dropdown-divider"></div>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="products-dinosaurs.php">Dinosaurs</a></li>
+            <li><div class="dropdown-divider"></div></li>
+            <li><a class="dropdown-item" href="products-robots.php">Robots</a></li>
+            
+        </ul>
         </li>
-
       </ul>
+      </div>
     </div>
   </nav>
 
