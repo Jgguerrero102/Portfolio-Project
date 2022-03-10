@@ -24,9 +24,9 @@
       <h4><?=$product[`title`];?></h4>
       <img src="<?=$product[`image`];?>" alt="<?=$product[`title`];?>" />
       <p class="1price"> <br>Rs <?=$product[`price`];?> </br></p>
-      <p class="1price">Rs <?=$product[`description`];?> </p>
-      <p class="1price">Rs <?=$product[`brandname`];?> </p>
+      <p class="desc">Rs <?=$product[`description`];?> </p>
+      <p class="bname">Rs <?=$product[`brandname`];?> </p>
   </div>
-  <<?php endwhile: ?>
+  <?php endwhile: ?>
   </div>
 </div>
