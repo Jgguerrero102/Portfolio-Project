@@ -58,7 +58,7 @@
   <div class="row">
       <h2 class="text-center">Suggested Products</h2> <br> </br>
       <?php
-            while ($product = mysqlnd_fetch_assoc($featured));
+            while ($product = mysqli_fetch_assoc($featured));
 
        ?>
   </div>
