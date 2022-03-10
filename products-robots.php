@@ -2,7 +2,7 @@
 <?php
       $con = mysqlnd_connect(`localhost`,`root`);
       mysqlnd_select_db($con, `ecommerce`);
-      $sql= "SELECT + FROM products WHERE featured=1";
+      $sql= "SELECT + FROM products WHERE featured=2";
       $featured = $con->query($sql)
 
  ?>
@@ -15,7 +15,7 @@
 <head>
 <title>Dino-Bot Toys</title>
 <link rel= "stylesheet" href="css/boostrap-reboot.min.css">
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <script src="https://ajax.com.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/boostrap.min.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
