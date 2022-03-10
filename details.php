@@ -1,7 +1,7 @@
 
 <?php
-      $con = mysqlnd_connect(`localhost`,`root`);
-      mysqlnd_select_db($con, `ecommerce`);
+      $con = mysqlnd_connect('localhost','root');
+      mysqlnd_select_db($con, 'ecommerce');
       $sql= "SELECT + FROM products WHERE featured=1";
       $featured = $con->query($sql)
 
@@ -21,11 +21,11 @@
        ?>
   </div>
   <div class="col-md-5">
-      <h4><?=$product[`title`];?></h4>
-      <img src="<?=$product[`image`];?>" alt="<?=$product[`title`];?>" />
-      <p class="1price"> <br>Rs <?=$product[`price`];?> </br></p>
-      <p class="desc">Rs <?=$product[`description`];?> </p>
-      <p class="bname">Rs <?=$product[`brandname`];?> </p>
+      <h4><?=$product['title'];?></h4>
+      <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" />
+      <p class="1price"> <br>Rs <?=$product['price'];?> </br></p>
+      <p class="desc">Rs <?=$product['description'];?> </p>
+      <p class="bname">Rs <?=$product['brandname'];?> </p>
   </div>
   <?php endwhile: ?>
   </div>

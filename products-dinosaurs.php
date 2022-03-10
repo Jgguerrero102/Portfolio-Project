@@ -1,7 +1,7 @@
 
 <?php
-      $con = mysqlnd_connect(`localhost`,`root`);
-      mysqlnd_select_db($con, `ecommerce`);
+      $con = mysqlnd_connect('localhost','root');
+      mysqlnd_select_db($con, 'ecommerce');
       $sql= "SELECT + FROM products WHERE featured=2";
       $featured = $con->query($sql)
 
@@ -62,9 +62,9 @@
        ?>
   </div>
   <div class="col-md-5">
-      <h4><?=$product[`title`];?></h4>
-      <img src="<?=$product[`image`];?>" alt="<?=$product[`title`];?>" />
-      <p class="1price">Rs <?=$product[`price`];?> </p>
+      <h4><?=$product['title'];?></h4>
+      <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" />
+      <p class="1price">Rs <?=$product['price'];?> </p>
       <a href="details.php">
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
