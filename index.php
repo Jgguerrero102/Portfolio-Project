@@ -70,7 +70,7 @@
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
   </div>
-  
+
   </div>
 </div>
 
