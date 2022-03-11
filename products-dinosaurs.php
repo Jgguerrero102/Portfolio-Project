@@ -1,7 +1,7 @@
 
 <?php
-      $con = mysqlnd_connect('localhost','root');
-      mysqlnd_select_db($con, 'ecommerce');
+      $con = mysqli_connect('localhost','root');
+      mysqli_select_db($con, 'ecommerce');
       $sql= "SELECT + FROM products WHERE featured=2";
       $featured = $con->query($sql)
 
