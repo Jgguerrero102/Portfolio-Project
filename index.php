@@ -1,17 +1,14 @@
-
 <?php
       $con = mysqli_connect('localhost','root');
       mysqli_select_db($con, 'ecommerce');
-      $sql= "SELECT + FROM products WHERE featured=1";
+      $sql = "SELECT * FROM products WHERE featured=1";
       $featured = $con->query($sql)
 
  ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
 <title>Dino-Bot Toys</title>
 <link rel= "stylesheet" href="css/boostrap-reboot.min.css">
@@ -23,7 +20,7 @@
 <title>Document</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
     <a class="navbar-brand" href="#">Dino-Bot Toys</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,7 +40,6 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="products-dinosaurs.php">Dinosaurs</a></li>
-            <li><div class="dropdown-divider"></div></li>
             <li><a class="dropdown-item" href="products-robots.php">Robots</a></li>
             
         </ul>
@@ -53,16 +49,15 @@
     </div>
   </nav>
 
-<div class="col-md-2">
+  <div class="col-md-2"></div>
   <div class="col-md-8">
   <div class="row">
       <h2 class="text-center">Suggested Products</h2> <br> </br>
       <?php
-            while ($product = mysqli_fetch_assoc($featured));
+            while ($product = mysqli_fetch_assoc($featured)):
           
        ?>
-  </div>
-  <div class="col-md-5">
+       <div class="col-md-5">
       <h4><?=$product['title'];?></h4>
       <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" />
       <p class="1price">Rs <?=$product[`price`];?> </p>
@@ -70,10 +65,9 @@
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
   </div>
-
+  <?php endwhile; ?>
   </div>
 </div>
-
 
 </body>
 </html>
