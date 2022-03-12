@@ -14,7 +14,7 @@
             while ($product = mysqli_fetch_assoc($featured));
           
        ?>
-  </div>
+ 
   <div class="col-md-5">
       <h4><?=$product['title'];?></h4>
       <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" />
@@ -23,6 +23,6 @@
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
   </div>
-
+  <?php endwhile; ?>
   </div>
 </div>

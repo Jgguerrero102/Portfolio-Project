@@ -60,7 +60,7 @@
             while ($product = mysqli_fetch_assoc($featured));
 
        ?>
-  </div>
+  
   <div class="col-md-5">
       <h4><?=$product['title'];?></h4>
       <img src="<?=$product['image'];?>" alt="<?=$product['title'];?>" />
