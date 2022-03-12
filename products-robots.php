@@ -52,7 +52,7 @@
     </div>
   </nav>
 
-<div class="col-md-2">
+<div class="col-md-2"></div>
   <div class="col-md-8">
   <div class="row">
       <h2 class="text-center">Suggested Products</h2> <br> </br>
@@ -69,7 +69,7 @@
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
   </div>
- 
+  <?php endwhile; ?>
   </div>
 </div>
 

@@ -11,7 +11,7 @@
 
 
 
-<div class="col-md-2">
+<div class="col-md-2"></div>
   <div class="col-md-8">
   <div class="row">
       <h2 class="text-center">Product Details</h2>
@@ -27,6 +27,6 @@
       <p class="desc">Rs <?=$product['description'];?> </p>
       <p class="bname">Rs <?=$product['brandname'];?> </p>
   </div>
- 
+  <?php endwhile; ?>
   </div>
 </div>
