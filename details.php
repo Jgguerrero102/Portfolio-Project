@@ -27,6 +27,6 @@
       <p class="desc">Rs <?=$product['description'];?> </p>
       <p class="bname">Rs <?=$product['brandname'];?> </p>
   </div>
-  <?php endwhile; ?>
+  
   </div>
 </div>
