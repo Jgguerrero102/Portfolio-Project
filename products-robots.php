@@ -2,7 +2,7 @@
 <?php
       $con = mysqli_connect('localhost','root');
       mysqli_select_db($con, 'ecommerce');
-      $sql= "SELECT + FROM products WHERE featured=2";
+      $sql= "SELECT * FROM products WHERE featured=2";
       $featured = $con->query($sql)
 
  ?>
@@ -68,7 +68,7 @@
         <button class="btn btn-success" type="button" data-toggle="modal" data-target="#details-1" >More</button>
       </a>
   </div>
- 
+  <?php endwhile; ?>
   </div>
 </div>
 
